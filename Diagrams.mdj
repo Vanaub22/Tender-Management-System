@@ -1,0 +1,1799 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Tender Management System",
+	"ownedElements": [
+		{
+			"_type": "DFDDataFlowModel",
+			"_id": "AAAAAAGKUG98bN0cgyY=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Data Flow Diagrams",
+			"ownedElements": [
+				{
+					"_type": "DFDDiagram",
+					"_id": "AAAAAAGKUG98bd0dP6g=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "TMS_DFD_L0",
+					"ownedViews": [
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGKUHFpvd0rbJ0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKUHFpvd0s4ig=",
+									"_parent": {
+										"$ref": "AAAAAAGKUHFpvd0rbJ0="
+									},
+									"font": "Arial;13;0",
+									"left": 554,
+									"top": 264,
+									"width": 173,
+									"height": 26,
+									"text": "Tender Management System (TMS)",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKUHFpvd0tl+o=",
+									"_parent": {
+										"$ref": "AAAAAAGKUHFpvd0rbJ0="
+									},
+									"font": "Arial;13;0",
+									"left": 554,
+									"top": 237,
+									"width": 173,
+									"height": 13,
+									"text": "0.0"
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 544,
+							"top": 232,
+							"width": 193,
+							"height": 505,
+							"nameLabel": {
+								"$ref": "AAAAAAGKUHFpvd0s4ig="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGKUHFpvd0tl+o="
+							}
+						},
+						{
+							"_type": "DFDDataStoreView",
+							"_id": "AAAAAAGKUHJhvt1bLs0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKUHJhvt1cbUY=",
+									"_parent": {
+										"$ref": "AAAAAAGKUHJhvt1bLs0="
+									},
+									"font": "Arial;13;0",
+									"left": 556,
+									"top": 842,
+									"width": 179,
+									"height": 13,
+									"text": "Tender and Bids Database",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKUHJhvt1doq8=",
+									"_parent": {
+										"$ref": "AAAAAAGKUHJhvt1bLs0="
+									},
+									"font": "Arial;13;0",
+									"left": 541,
+									"top": 842,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 536,
+							"top": 832,
+							"width": 209,
+							"height": 57,
+							"nameLabel": {
+								"$ref": "AAAAAAGKUHJhvt1cbUY="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGKUHJhvt1doq8="
+							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGKUHL+I91pmrY=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"font": "Arial;13;0",
+							"left": 456,
+							"top": 928,
+							"width": 449,
+							"height": 49,
+							"text": "LEVEL 0 DATA FLOW DIAGRAM FOR TENDER MANAGEMENT SYSTEM PREPARED BY ANUVAB CHAKRAVARTY (13000121036)",
+							"vertAlign": 5
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGKaA5Ed0Xrb8w=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA5EeEXxdBU=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+									},
+									"font": "Arial;13;0",
+									"left": 162,
+									"top": 269,
+									"width": 148,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA5Ed0Xsti4=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+									},
+									"font": "Arial;13;0",
+									"left": 162,
+									"top": 274,
+									"width": 148,
+									"height": 26,
+									"text": "Stakeholder / Tender Creator (User Type 1)",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA5Ed0Xtz8w=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+									},
+									"font": "Arial;13;0",
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 152,
+							"top": 264,
+							"width": 168,
+							"height": 328,
+							"nameLabel": {
+								"$ref": "AAAAAAGKaA5Ed0Xsti4="
+							}
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGKaA6vEUX3vEw=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA6vEkX9y/M=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA6vEUX3vEw="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 237,
+									"width": 148,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA6vEUX45xo=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA6vEUX3vEw="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 242,
+									"width": 148,
+									"height": 26,
+									"text": "Bidder / Seller (User Type 2)",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaA6vEUX56Rc=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA6vEUX3vEw="
+									},
+									"font": "Arial;13;0",
+									"left": 688,
+									"top": -128,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 912,
+							"top": 232,
+							"width": 168,
+							"height": 240,
+							"nameLabel": {
+								"$ref": "AAAAAAGKaA6vEUX45xo="
+							}
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGKaBPKGEYI6DM=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaBPKGUYOb5Y=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBPKGEYI6DM="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 501,
+									"width": 156,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaBPKGEYJVJ4=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBPKGEYI6DM="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 506,
+									"width": 156,
+									"height": 13,
+									"text": "Admin",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGKaBPKGEYKDLg=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBPKGEYI6DM="
+									},
+									"font": "Arial;13;0",
+									"left": 8,
+									"top": -80,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 912,
+							"top": 496,
+							"width": 176,
+							"height": 256,
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBPKGEYJVJ4="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBRN7UYWyak=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBRN7EYU+q0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBRN7UYX5Os=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBRN7UYWyak="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBRN7EYU+q0="
+									},
+									"font": "Arial;13;0",
+									"left": 391,
+									"top": 776,
+									"width": 160.42431640625,
+									"height": 13,
+									"alpha": -1.5820320186485,
+									"distance": 89.00561780022652,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBRN7UYWyak="
+									},
+									"edgePosition": 1,
+									"text": "New Tender Info Input / Edit"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHJhvt1bLs0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "560:736;560:832",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBRN7UYX5Os="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBTwF0YifsI=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBTwF0Ygy5c="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBTwGEYjIRo=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBTwF0YifsI="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBTwF0Ygy5c="
+									},
+									"font": "Arial;13;0",
+									"left": 583,
+									"top": 764,
+									"width": 101.1689453125,
+									"height": 13,
+									"alpha": -1.3503023938908096,
+									"distance": 59.43904440685432,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBTwF0YifsI="
+									},
+									"edgePosition": 1,
+									"text": "Tender Info Fetch"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHJhvt1bLs0="
+							},
+							"lineStyle": 2,
+							"points": "576:832;576:736",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBTwGEYjIRo="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBXmA0YwBmc=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBXmA0Yuku4="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBXmA0YxcxY=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBXmA0YwBmc="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBXmA0Yuku4="
+									},
+									"font": "Arial;13;0",
+									"left": 712,
+									"top": 776,
+									"width": 157.54248046875,
+									"height": 13,
+									"alpha": 1.594047738569324,
+									"distance": 86.02325267042627,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBXmA0YwBmc="
+									},
+									"edgePosition": 1,
+									"text": "Tender Closed / Invalidated"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHJhvt1bLs0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "704:736;704:832",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBXmA0YxcxY="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBdcIkZBwlM=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBdcIUY/XIQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBdcIkZCoaU=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBdcIkZBwlM="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBdcIUY/XIQ="
+									},
+									"font": "Arial;13;0",
+									"left": 603,
+									"top": 792,
+									"width": 83.10986328125,
+									"height": 13,
+									"alpha": -4.404335925361526,
+									"distance": 46.17358552246078,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBdcIkZBwlM="
+									},
+									"edgePosition": 1,
+									"text": "Latest Bid Info"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHJhvt1bLs0="
+							},
+							"lineStyle": 2,
+							"points": "688:832;688:736",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBdcIkZCoaU="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBiQhEZO0ZA=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBiQhEZMSHo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBiQhUZPY8U=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBiQhEZO0ZA="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBiQhEZMSHo="
+									},
+									"font": "Arial;13;0",
+									"left": 387,
+									"top": 251,
+									"width": 88.892578125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBiQhEZO0ZA="
+									},
+									"edgePosition": 1,
+									"text": "Login / Sign Up"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"lineStyle": 2,
+							"points": "319:272;544:272",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBiQhUZPY8U="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBjgvEZZmRA=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBjgvEZXi0Y="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBjgvUZa6Nc=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBjgvEZZmRA="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBjgvEZXi0Y="
+									},
+									"font": "Arial;13;0",
+									"left": 339,
+									"top": 297,
+									"width": 182.076171875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBjgvEZZmRA="
+									},
+									"edgePosition": 1,
+									"text": "Confirmation / Profile Displayed"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "544:288;319:288",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBjgvUZa6Nc="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaBl6MEZymlA=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaBl6MEZweTM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaBl6MEZzBwY=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBl6MEZymlA="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaBl6MEZweTM="
+									},
+									"font": "Arial;13;0",
+									"left": 385,
+									"top": 449,
+									"width": 92.498046875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaBl6MEZymlA="
+									},
+									"edgePosition": 1,
+									"text": "Tender Creation"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"lineStyle": 2,
+							"points": "319:470;544:470",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaBl6MEZzBwY="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaCP8jEZ8Y0o=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaCP8i0Z6/rw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaCP8jEZ90e4=",
+									"_parent": {
+										"$ref": "AAAAAAGKaCP8jEZ8Y0o="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaCP8i0Z6/rw="
+									},
+									"font": "Arial;13;0",
+									"left": 360,
+									"top": 497,
+									"width": 140.91162109375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaCP8jEZ8Y0o="
+									},
+									"edgePosition": 1,
+									"text": "Tender Info Made visible"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "544:488;319:488",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaCP8jEZ90e4="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaCZ2REaI0UQ=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaCZ2Q0aG11Y="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaCZ2REaJwUs=",
+									"_parent": {
+										"$ref": "AAAAAAGKaCZ2REaI0UQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaCZ2Q0aG11Y="
+									},
+									"font": "Arial;13;0",
+									"left": 341,
+									"top": 331,
+									"width": 181.34619140625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaCZ2REaI0UQ="
+									},
+									"edgePosition": 1,
+									"text": "Revise / Edit / Withdraw Tender"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"lineStyle": 2,
+							"points": "319:352;544:352",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaCZ2REaJwUs="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaCgt+0aSlWE=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaCgt+0aQLkw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaCgt+0aTYag=",
+									"_parent": {
+										"$ref": "AAAAAAGKaCgt+0aSlWE="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaCgt+0aQLkw="
+									},
+									"font": "Arial;13;0",
+									"left": 779,
+									"top": 457,
+									"width": 88.892578125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaCgt+0aSlWE="
+									},
+									"edgePosition": 1,
+									"text": "Login / Sign Up"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"lineStyle": 2,
+							"points": "912:448;736:448",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaCgt+0aTYag="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaChldkacUe0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaChldkaa3O0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaChldkadD0w=",
+									"_parent": {
+										"$ref": "AAAAAAGKaChldkacUe0="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaChldkaa3O0="
+									},
+									"font": "Arial;13;0",
+									"left": 782,
+									"top": 307,
+									"width": 85.26806640625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaChldkacUe0="
+									},
+									"edgePosition": 1,
+									"text": "Bid Registered"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:328;912:328",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaChldkadD0w="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDSMYUaoGig=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDSMYEamHjI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDSMYUapcbo=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDSMYUaoGig="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDSMYEamHjI="
+									},
+									"font": "Arial;13;0",
+									"left": 393,
+									"top": 377,
+									"width": 74.4453125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDSMYUaoGig="
+									},
+									"edgePosition": 1,
+									"text": "Info Updated"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "544:368;319:368",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDSMYUapcbo="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDTuXUazZ4o=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDTuXEaxo8U="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDTuXUa0PUU=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDTuXUazZ4o="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDTuXEaxo8U="
+									},
+									"font": "Arial;13;0",
+									"left": 792,
+									"top": 353,
+									"width": 62.86083984375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDTuXUazZ4o="
+									},
+									"edgePosition": 1,
+									"text": "Submit Bid"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"lineStyle": 2,
+							"points": "912:344;736:344",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDTuXUa0PUU="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDUT/0a+59c=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDUT/0a8q/U="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDUT/0a/8fY=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDUT/0a+59c="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDUT/0a8q/U="
+									},
+									"font": "Arial;13;0",
+									"left": 747,
+									"top": 411,
+									"width": 154.62890625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDUT/0a+59c="
+									},
+									"edgePosition": 1,
+									"text": "Profile Created / Displayed"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:432;912:432",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDUT/0a/8fY="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDabHUbTOCs=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDabHUbRTW0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDabHkbU54A=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDabHUbTOCs="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDabHUbRTW0="
+									},
+									"font": "Arial;13;0",
+									"left": 775,
+									"top": 487,
+									"width": 72.26806640625,
+									"height": 13,
+									"alpha": -0.6556959979889276,
+									"distance": 16.401219466856727,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDabHUbTOCs="
+									},
+									"edgePosition": 1,
+									"text": "Admin Login"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"lineStyle": 2,
+							"points": "912:504;736:504",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDabHkbU54A="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDbCj0bebgg=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDbCjkbcwjY="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDbCj0bf25o=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDbCj0bebgg="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDbCjkbcwjY="
+									},
+									"font": "Arial;13;0",
+									"left": 754,
+									"top": 528,
+									"width": 138.00439453125,
+									"height": 13,
+									"alpha": -1.6421030809202524,
+									"distance": 14.035668847618199,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDbCj0bebgg="
+									},
+									"edgePosition": 1,
+									"text": "Admin Profile Displayed"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:520;912:520",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDbCj0bf25o="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDcnc0btqyM=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDcnckbr0Hs="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDcnc0buyxo=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDcnc0btqyM="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDcnckbr0Hs="
+									},
+									"font": "Arial;13;0",
+									"left": 744,
+									"top": 568,
+									"width": 163.2998046875,
+									"height": 13,
+									"alpha": 4.645820152892081,
+									"distance": 15.033296378372908,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDcnc0btqyM="
+									},
+									"edgePosition": 1,
+									"text": "Assign / Change User Roles"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"lineStyle": 2,
+							"points": "912:589;736:589",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDcnc0buyxo="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDd1tkb4Tqc=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDd1tUb2NM0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDd1tkb5uEE=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDd1tkb4Tqc="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDd1tUb2NM0="
+									},
+									"font": "Arial;13;0",
+									"left": 784,
+									"top": 615,
+									"width": 83.0908203125,
+									"height": 13,
+									"alpha": -1.4994881513497438,
+									"distance": 14.035668847618199,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDd1tkb4Tqc="
+									},
+									"edgePosition": 1,
+									"text": "User Role Info"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:608;912:608",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDd1tkb5uEE="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDi4u0cHT3g=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDi4ukcFakk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDi4u0cITEY=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDi4u0cHT3g="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDi4ukcFakk="
+									},
+									"font": "Arial;13;0",
+									"left": 784,
+									"top": 639,
+									"width": 76.59716796875,
+									"height": 13,
+									"alpha": -1.3734017284836622,
+									"distance": 10.198039027185569,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDi4u0cHT3g="
+									},
+									"edgePosition": 1,
+									"text": "Close Tender"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"lineStyle": 2,
+							"points": "912:656;736:656",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDi4u0cITEY="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaDj8LkcU8YQ=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaDj8LkcSn/g="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaDj8LkcVjfA=",
+									"_parent": {
+										"$ref": "AAAAAAGKaDj8LkcU8YQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaDj8LkcSn/g="
+									},
+									"font": "Arial;13;0",
+									"left": 788,
+									"top": 679,
+									"width": 73.6962890625,
+									"height": 13,
+									"alpha": -1.5707956125091824,
+									"distance": 14,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaDj8LkcU8YQ="
+									},
+									"edgePosition": 1,
+									"text": "Confirmation"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaBPKGEYI6DM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:672;912:672",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaDj8LkcVjfA="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaFQg0UcrOTc=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaFQg0UcpMaM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaFQg0UcsJUk=",
+									"_parent": {
+										"$ref": "AAAAAAGKaFQg0UcrOTc="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaFQg0UcpMaM="
+									},
+									"font": "Arial;13;0",
+									"left": 351,
+									"top": 522,
+									"width": 158.74853515625,
+									"height": 13,
+									"alpha": -4.64582148032571,
+									"distance": 15.033296378372908,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaFQg0UcrOTc="
+									},
+									"edgePosition": 1,
+									"text": "View Tender Bidding Status"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"lineStyle": 2,
+							"points": "319:544;544:544",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaFQg0UcsJUk="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaF4De0c4XY8=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaF4De0c2CLc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaF4De0c5diE=",
+									"_parent": {
+										"$ref": "AAAAAAGKaF4De0c4XY8="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaF4De0c2CLc="
+									},
+									"font": "Arial;13;0",
+									"left": 391,
+									"top": 569,
+									"width": 79.4853515625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaF4De0c4XY8="
+									},
+									"edgePosition": 1,
+									"text": "Status Report"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "544:560;319:560",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaF4De0c5diE="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaF6sb0dDMHM=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaF6sb0dBKKo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaF6sb0dEjJc=",
+									"_parent": {
+										"$ref": "AAAAAAGKaF6sb0dDMHM="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaF6sb0dBKKo="
+									},
+									"font": "Arial;13;0",
+									"left": 766,
+									"top": 281,
+									"width": 115.3876953125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaF6sb0dDMHM="
+									},
+									"edgePosition": 1,
+									"text": "View Bidding Status"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"lineStyle": 2,
+							"points": "912:272;736:272",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaF6sb0dEjJc="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGKaF73rEdOmLk=",
+							"_parent": {
+								"$ref": "AAAAAAGKUG98bd0dP6g="
+							},
+							"model": {
+								"$ref": "AAAAAAGKaF73rEdM9AY="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGKaF73rEdPp9I=",
+									"_parent": {
+										"$ref": "AAAAAAGKaF73rEdOmLk="
+									},
+									"model": {
+										"$ref": "AAAAAAGKaF73rEdM9AY="
+									},
+									"font": "Arial;13;0",
+									"left": 785,
+									"top": 235,
+									"width": 79.4853515625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGKaF73rEdOmLk="
+									},
+									"edgePosition": 1,
+									"text": "Status Report"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKaA6vEUX3vEw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGKUHFpvd0rbJ0="
+							},
+							"lineStyle": 2,
+							"points": "736:256;912:256",
+							"nameLabel": {
+								"$ref": "AAAAAAGKaF73rEdPp9I="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGKUHFpvN0pRI4=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "Tender Management System (TMS)",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBRN7EYU+q0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "New Tender Info Input / Edit",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBXmA0Yuku4=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Tender Closed / Invalidated",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBjgvEZXi0Y=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Confirmation / Profile Displayed",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaCP8i0Z6/rw=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Tender Info Made visible",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaChldkaa3O0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Bid Registered",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDSMYEamHjI=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Info Updated",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDUT/0a8q/U=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Profile Created / Displayed",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDbCjkbcwjY=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Admin Profile Displayed",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDd1tUb2NM0=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "User Role Info",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDj8LkcSn/g=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Confirmation",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaF4De0c2CLc=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Status Report",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaF73rEdM9AY=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"name": "Status Report",
+							"source": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							},
+							"target": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							}
+						}
+					],
+					"id": "0.0"
+				},
+				{
+					"_type": "DFDDataStore",
+					"_id": "AAAAAAGKUHJhvt1ZkDo=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "Tender and Bids Database",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBTwF0Ygy5c=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							},
+							"name": "Tender Info Fetch",
+							"source": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBdcIUY/XIQ=",
+							"_parent": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							},
+							"name": "Latest Bid Info",
+							"source": {
+								"$ref": "AAAAAAGKUHJhvt1ZkDo="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGKaA5EdkXp2pQ=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "Stakeholder / Tender Creator (User Type 1)",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBiQhEZMSHo=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"name": "Login / Sign Up",
+							"source": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaBl6MEZweTM=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"name": "Tender Creation",
+							"source": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaCZ2Q0aG11Y=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"name": "Revise / Edit / Withdraw Tender",
+							"source": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaFQg0UcpMaM=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"name": "View Tender Bidding Status",
+							"source": {
+								"$ref": "AAAAAAGKaA5EdkXp2pQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGKaA6vEUX1RhQ=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "Bidder / Seller (User Type 2)",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaCgt+0aQLkw=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"name": "Login / Sign Up",
+							"source": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDTuXEaxo8U=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"name": "Submit Bid",
+							"source": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaF6sb0dBKKo=",
+							"_parent": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"name": "View Bidding Status",
+							"source": {
+								"$ref": "AAAAAAGKaA6vEUX1RhQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGKaBPKGEYG09M=",
+					"_parent": {
+						"$ref": "AAAAAAGKUG98bN0cgyY="
+					},
+					"name": "Admin",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDabHUbRTW0=",
+							"_parent": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"name": "Admin Login",
+							"source": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDcnckbr0Hs=",
+							"_parent": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"name": "Assign / Change User Roles",
+							"source": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGKaDi4ukcFakk=",
+							"_parent": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"name": "Close Tender",
+							"source": {
+								"$ref": "AAAAAAGKaBPKGEYG09M="
+							},
+							"target": {
+								"$ref": "AAAAAAGKUHFpvN0pRI4="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
