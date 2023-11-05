@@ -17,4 +17,4 @@ The project is still in its nascent stage and runs only on a Virtual Environment
  4. In your terminal, type in: `python -m pip install flask_wtf`
  5. In your terminal, type in: `python -m pip install flask_login`
  6. After that simply type in `python
-    run.py` in the terminal.
+    run.py` in the terminal, this should get your web application up and running at `http://127.0.0.1:5000/home`.
