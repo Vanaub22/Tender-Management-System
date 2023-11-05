@@ -11,7 +11,10 @@ The project is still in its nascent stage and runs only on a Virtual Environment
 
 ## The steps to start this project are as follows (For Windows Machines Only):
 
- 1. Install VS Code and import all necessary dependencies, packages etc.
+ 1. Install VS Code (Assuming you have python, Flask and pip installed)
  2. Open Terminal in VS Code and type: `protender\Scripts\activate.bat` to launch the Virtual Environment.
- 3. After that simply type in `python
+ 3. In your terminal, type in: `python -m pip install flask_bcrypt`
+ 4. In your terminal, type in: `python -m pip install flask_wtf`
+ 5. In your terminal, type in: `python -m pip install flask_login`
+ 6. After that simply type in `python
     run.py` in the terminal.
