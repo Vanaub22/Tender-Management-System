@@ -5,9 +5,9 @@ This is the Beta Version of the Tender Management System which I had to prepare 
 
 ## Key Functionalities Offered So Far:
 
- **1. Login / Sign Up / Authentication:** Account Creation has been implemented with sessions and **Logging Out**.
- **2. Setting Bids for Tenders**
- **3. Selling Tenders**
+ 1. **Login / Sign Up / Authentication:** Account Creation has been implemented with sessions.
+ 2. **Setting Bids for Tenders**
+ 3. **Selling Tenders**
 
 ## Tech used:
 
