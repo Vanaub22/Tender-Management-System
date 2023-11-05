@@ -1,8 +1,15 @@
+
 # Tender Management System
 
 This is the Beta Version of the Tender Management System which I had to prepare as a part of my **Software Engineering Course** **(ESC501)** in my **3rd Year (5th Semester)** of **B.Tech** in **CSE**.
 
-Tech used:
+## Key Functionalities Offered So Far:
+
+ **1. Login / Sign Up / Authentication:** Account Creation has been implemented with sessions and **Logging Out**.
+ **2. Setting Bids for Tenders**
+ **3. Selling Tenders**
+
+## Tech used:
 
  - **Front-End:** HTML, CSS, JavaScript, Bootstrap-4
  - **Back-End:** Flask, SQLAlchemy, SQLite3
