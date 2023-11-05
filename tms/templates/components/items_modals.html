@@ -1,0 +1,68 @@
+<style>
+    .modal-content {
+      background-color: #212121
+    }
+  </style>
+  
+  <!-- More Info -->
+  <div class="modal fade" id="Modal-MoreInfo-{{ item.id }}"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">
+            {{ item.name }}
+          </h5>
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ item.desc }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+                  data-dismiss="modal">Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Purchase Confirm -->
+  <div class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">
+            <!-- -->
+            {{ item.name }}
+          </h5>
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST">
+            {{ bid_form.hidden_tag() }}
+            <h4>Are you sure you want to bid for the {{ item.name }} Tender for ₹{{ item.price }} ?</h4>
+            <br>
+            <h6>On clicking Set Bid, a bid will be set for this item</h6>
+            <br>
+            <input id="bidding" name="bidding" type="hidden" value="{{ item.name }}">
+            {{ bid_form.submit(class="btn btn-outline-success btn-block") }}
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+                  data-dismiss="modal">Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

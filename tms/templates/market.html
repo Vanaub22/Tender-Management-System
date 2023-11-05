@@ -1,0 +1,62 @@
+{% extends 'base.html' %} {% block title %} Market Page {% endblock %} 
+{% block content %}
+<div class="row" style="margin-top: 20px; margin-left: 20px;">
+  <div class="col-8">
+    <h2>Available Tenders on ProTender</h2>
+    <p>Click on any Tender to set a bid, view Documentation or access analytics</p>
+    <br>
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <!-- Your Columns HERE -->
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Tender ID</th>
+          <th scope="col">Price</th>
+          <th scope="col">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Your rows inside the table HERE: -->
+        {% for item in items %}
+        {% include 'components/items_modals.html' %}
+        <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.tid }}</td>
+          <td>₹{{ item.price }}</td>
+          <td>
+            <button class="btn btn-outline btn-info" data-toggle="modal" data-target="#Modal-MoreInfo-{{item.id}}">View Details</button>
+            <button class="btn btn-outline btn-success" data-toggle="modal" data-target="#Modal-PurchaseConfirm-{{item.id}}">Set Bid</button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-4">
+    <h2>Owned Tenders and Bids</h2>
+    <p>Click on Let Go to stop placing bids for a Tender</p>
+    <br>
+    <div class="row">
+      {% for owned_item in owned_items %}
+      {% include 'components/owned_items_modals.html' %}
+        <div class="col-md-6">
+          <div style="margin-bottom: 5px" class="card text-center bg-dark">
+            <div class="card-body">
+                <h6 class="card-title">{{ owned_item.name }}</h6>
+                <button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
+                        data-toggle="modal" data-target="#Modal-SellConfirm-{{ owned_item.id }}">
+                    Let Go
+                </button>
+                <p class="card-text">
+                    The current bid is ₹{{owned_item.price}}</p>
+                <!-- <p class="card-text">Your budget after selling will be ₹{{current_user.budget+owned_item.price}}</p> -->
+            </div>
+        </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
