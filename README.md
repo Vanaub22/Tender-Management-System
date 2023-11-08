@@ -8,6 +8,9 @@ This is the Beta Version of the Tender Management System which I had to prepare 
  1. **Login / Sign Up / Authentication:** Account Creation has been implemented with sessions.
  2. **Setting Bids for Tenders**
  3. **Selling Tenders**
+ 4. **Displaying Available Balance after Selling / Purchasing**
+ 5. **Delete Tenders from Listing**
+ 6. **Adding Tenders to Listing**
 
 ## Tech used:
 
