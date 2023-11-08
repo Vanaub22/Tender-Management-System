@@ -1,10 +1,22 @@
-{% extends 'base.html' %} {% block title %} Market Page {% endblock %} 
-{% block content %}
-<div class="row" style="margin-top: 20px; margin-left: 20px;">
+{% extends 'base.html' %} {% block title %} Market Page {% endblock %} {%block
+navlink%}
+<li class="nav-item">
+  <a
+    class="nav-link"
+    data-toggle="modal"
+    style="cursor: pointer"
+    data-target="#Modal-TenderCreate"
+    >Create Tender</a
+  >
+</li>
+{%endblock%} {% block content %}
+<div class="row" style="margin-top: 20px; margin-left: 20px">
   <div class="col-8">
     <h2>Available Tenders on ProTender</h2>
-    <p>Click on any Tender to set a bid, view Documentation or access analytics</p>
-    <br>
+    <p>
+      Click on any Tender to set a bid, view Documentation or access analytics
+    </p>
+    <br />
     <table class="table table-hover table-dark">
       <thead>
         <tr>
@@ -18,16 +30,34 @@
       </thead>
       <tbody>
         <!-- Your rows inside the table HERE: -->
-        {% for item in items %}
-        {% include 'components/items_modals.html' %}
+        {% for item in items %} {% include 'components/items_modals.html' %}
         <tr>
           <td>{{ item.id }}</td>
           <td>{{ item.name }}</td>
           <td>{{ item.tid }}</td>
           <td>₹{{ item.price }}</td>
           <td>
-            <button class="btn btn-outline btn-info" data-toggle="modal" data-target="#Modal-MoreInfo-{{item.id}}">View Details</button>
-            <button class="btn btn-outline btn-success" data-toggle="modal" data-target="#Modal-PurchaseConfirm-{{item.id}}">Set Bid</button>
+            <button
+              class="btn btn-outline btn-info"
+              data-toggle="modal"
+              data-target="#Modal-MoreInfo-{{item.id}}"
+            >
+              View Details
+            </button>
+            <button
+              class="btn btn-outline btn-success"
+              data-toggle="modal"
+              data-target="#Modal-PurchaseConfirm-{{item.id}}"
+            >
+              Set Bid
+            </button>
+            <button
+              class="btn btn-outline btn-info"
+              onclick="deleteTender('{{item.id}}')"
+            >
+              Delete
+            </button>
+            <!-- Added onclick event -->
           </td>
         </tr>
         {% endfor %}
@@ -37,26 +67,130 @@
   <div class="col-4">
     <h2>Owned Tenders and Bids</h2>
     <p>Click on Let Go to stop placing bids for a Tender</p>
-    <br>
+    <br />
     <div class="row">
-      {% for owned_item in owned_items %}
-      {% include 'components/owned_items_modals.html' %}
-        <div class="col-md-6">
-          <div style="margin-bottom: 5px" class="card text-center bg-dark">
-            <div class="card-body">
-                <h6 class="card-title">{{ owned_item.name }}</h6>
-                <button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
-                        data-toggle="modal" data-target="#Modal-SellConfirm-{{ owned_item.id }}">
-                    Let Go
-                </button>
-                <p class="card-text">
-                    The current bid is ₹{{owned_item.price}}</p>
-                <!-- <p class="card-text">Your budget after selling will be ₹{{current_user.budget+owned_item.price}}</p> -->
-            </div>
+      {% for owned_item in owned_items %} {% include
+      'components/owned_items_modals.html' %}
+      <div class="col-md-6">
+        <div style="margin-bottom: 5px" class="card text-center bg-dark">
+          <div class="card-body">
+            <h6 class="card-title">{{ owned_item.name }}</h6>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              style="margin-bottom: 5px"
+              data-toggle="modal"
+              data-target="#Modal-SellConfirm-{{ owned_item.id }}"
+            >
+              Let Go
+            </button>
+            <p class="card-text">The current bid is ₹{{owned_item.price}}</p>
+            <!-- <p class="card-text">Your budget after selling will be ₹{{current_user.budget+owned_item.price}}</p> -->
+          </div>
         </div>
-        </div>
+      </div>
       {% endfor %}
     </div>
   </div>
 </div>
+
+<!-- Modal for creating a new tender -->
+<div
+  class="modal fade"
+  id="Modal-TenderCreate"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a New Tender</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Your form for creating a new tender -->
+        <form id="createTenderForm">
+          <!-- Input fields for creating a new tender -->
+          <!-- Example: -->
+          <input type="text" id="tenderName" placeholder="Tender Name" /><br />
+          <input type="text" id="tenderID" placeholder="Tender ID" /><br />
+          <input
+            type="text"
+            id="tenderPrice"
+            placeholder="Tender Price"
+          /><br />
+          <textarea id="tenderDesc" placeholder="Description"></textarea><br />
+          <!-- Added textarea for description -->
+          <button type="button" onclick="submitTender()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block script %}
+<script>
+  function submitTender() {
+    // Get the values from the form
+    var tenderName = document.getElementById("tenderName").value;
+    var tenderPrice = document.getElementById("tenderPrice").value;
+    var tenderID = document.getElementById("tenderID").value;
+    var tenderDesc = document.getElementById("tenderDesc").value;
+
+    // Create the data object to be sent to the Flask endpoint
+    var data = {
+      name: tenderName,
+      price: tenderPrice,
+      tid: tenderID,
+      desc: tenderDesc,
+    };
+
+    // Send the data to the Flask endpoint
+    fetch("/add_item", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        location.reload();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error");
+      });
+    $("#Modal-TenderCreate").modal("hide");
+  }
+
+  function deleteTender(itemId) {
+    fetch(`/delete_item/${itemId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        location.reload();
+        // You can update the UI here or reload the page to reflect the changes
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error");
+      });
+  }
+</script>
 {% endblock %}

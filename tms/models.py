@@ -16,14 +16,6 @@ class User(db.Model,UserMixin):
     @property
     def password(self):
         return self.password
-
-    # @property
-    # def prettier_budget(self):
-    #     # to simply add commas to the number that we are displaying
-    #     if len(str(self.budget)) >= 4:
-    #         return f'tok{str(self.budget)[:-3]},{str(self.budget)[-3:]}'
-    #     else:
-    #         return f"₹{self.budget}"
     
     @password.setter
     def password(self,plain_text_password):

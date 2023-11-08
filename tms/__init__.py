@@ -2,7 +2,9 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_marshmallow import Marshmallow
 app = Flask(__name__)
+ma = Marshmallow(app) 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///tms.db'
 app.config['SECRET_KEY']='E39058C761AB'
 db=SQLAlchemy(app)

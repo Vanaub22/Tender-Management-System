@@ -1,6 +1,8 @@
 from tms import app
+from tms import ma
 from flask import render_template,redirect,url_for,flash,request
 from tms.models import Item,User
+from flask import jsonify
 from tms import db
 from tms.models import Item
 from tms.forms import RegisterForm,LoginForm,SellTenderForm,SetBidForm
@@ -78,3 +80,35 @@ def login_page():
             flash('Username and Password do not Match! Please try again', category='danger')
 
     return render_template('login.html', form=form)
+
+class ItemSchema(ma.Schema):
+    class Meta:
+        fields = ('id', 'name', 'price', 'tid', 'desc', 'owner')
+
+item_schema = ItemSchema()
+items_schema = ItemSchema(many=True)
+
+# Route to handle JSON data and save it into the database
+@app.route('/add_item', methods=['POST'])
+def add_item():
+    name = request.json['name']
+    price = request.json['price']
+    tid = request.json['tid']
+    desc = request.json['desc']
+    new_item = Item(name=name, price=price, tid=tid, desc=desc)
+    db.session.add(new_item)
+    db.session.commit()
+    return item_schema.jsonify(new_item)
+
+
+# Route to delete a tender by its tender ID
+@app.route('/delete_item/<int:item_id>', methods=['DELETE'])
+def delete_item(item_id):
+    to_delete=Item.query.filter_by(id=item_id).first()
+    # print(to_delete)
+    if not to_delete:
+        return jsonify({"Message":"Item not found"}),404
+    item=to_delete
+    db.session.delete(item)
+    db.session.commit()
+    return jsonify({'message': 'Tender deleted successfully'})
