@@ -1,0 +1,10 @@
+TOPIC: ONLINE TENDER MANAGEMENT SYSTEM
+
+LINK TO THE PROJECT ON GITHUB: https://github.com/Vanaub22/Tender-Management-System
+
+DEPLOYMENT LINK: N/A
+
+Name: Anuvab Chakravarty
+Roll: 13000121036
+Department: Computer Science Engineering
+Year: 3rd (2021-25)

@@ -143,6 +143,18 @@
 							"subViews": [
 								{
 									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbhqqL7Uk=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA5Ed0Xrb8w="
+									},
+									"font": "Arial;13;0",
+									"left": 162,
+									"top": 269,
+									"width": 148,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTt6KqvzI=",
 									"_parent": {
 										"$ref": "AAAAAAGKaA5Ed0Xrb8w="
@@ -280,6 +292,18 @@
 								"$ref": "AAAAAAGKaA6vEUX1RhQ="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbiKqY6M8=",
+									"_parent": {
+										"$ref": "AAAAAAGKaA6vEUX3vEw="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 237,
+									"width": 148,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTvKK2fO4=",
@@ -421,6 +445,18 @@
 								"$ref": "AAAAAAGKaBPKGEYG09M="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbiaql+Fc=",
+									"_parent": {
+										"$ref": "AAAAAAGKaBPKGEYI6DM="
+									},
+									"font": "Arial;13;0",
+									"left": 922,
+									"top": 501,
+									"width": 156,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTvKLCZH8=",
@@ -2465,6 +2501,18 @@
 							"subViews": [
 								{
 									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbmatAqbY=",
+									"_parent": {
+										"$ref": "AAAAAAGLvy9ZlVqaIc0="
+									},
+									"font": "Arial;13;0",
+									"left": 58,
+									"top": 45,
+									"width": 141,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTwKNcyfs=",
 									"_parent": {
 										"$ref": "AAAAAAGLvy9ZlVqaIc0="
@@ -2558,6 +2606,18 @@
 							"subViews": [
 								{
 									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbmatJb64=",
+									"_parent": {
+										"$ref": "AAAAAAGLvy/L41qn99o="
+									},
+									"font": "Arial;13;0",
+									"left": 698,
+									"top": 53,
+									"width": 125,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTwaNkjxs=",
 									"_parent": {
 										"$ref": "AAAAAAGLvy/L41qn99o="
@@ -2649,6 +2709,18 @@
 								"$ref": "AAAAAAGLvzBEA1qyx1Y="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbmqtSxk0=",
+									"_parent": {
+										"$ref": "AAAAAAGLvzBEA1q0e6c="
+									},
+									"font": "Arial;13;0",
+									"left": 1282,
+									"top": 189,
+									"width": 109,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGLwnFTwaNsLF0=",
@@ -5101,6 +5173,18 @@
 								"$ref": "AAAAAAGLwnOX2aU1OO8="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGLw2sbp6wB5Jo=",
+									"_parent": {
+										"$ref": "AAAAAAGLwnOX2aU35t8="
+									},
+									"font": "Arial;13;0",
+									"left": 226,
+									"top": 477,
+									"width": 189,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGLwnOX2qU9VJA=",
@@ -8046,6 +8130,32 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGLvpuf4BY1mGc="
 							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGLw2tZh67Fn5c=",
+							"_parent": {
+								"$ref": "AAAAAAGLuKyK1L7BcKM="
+							},
+							"font": "Arial;13;0",
+							"left": 56,
+							"top": 368,
+							"width": 193,
+							"height": 77,
+							"text": "CLASS DIAGRAM FOR TENDER MANAGEMENT SYSTEM PREPARED BY ANUVAB CHAKRAVARTY (13000121036)"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGLw2vSvbPDRZk=",
+							"_parent": {
+								"$ref": "AAAAAAGLuKyK1L7BcKM="
+							},
+							"font": "Arial;13;0",
+							"left": 56,
+							"top": 456,
+							"width": 144,
+							"height": 64,
+							"text": "The implementation follows the Model-View-Controller (MVC) Architecture"
 						}
 					]
 				},
