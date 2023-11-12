@@ -52,7 +52,7 @@ navlink%}
               Set Bid
             </button>
             <button
-              class="btn btn-outline btn-info"
+              class="btn btn-outline btn-danger"
               onclick="deleteTender('{{item.id}}')"
             >
               Delete
@@ -95,24 +95,12 @@ navlink%}
 </div>
 
 <!-- Modal for creating a new tender -->
-<div
-  class="modal fade"
-  id="Modal-TenderCreate"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="Modal-TenderCreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Create a New Tender</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -121,21 +109,26 @@ navlink%}
         <form id="createTenderForm">
           <!-- Input fields for creating a new tender -->
           <!-- Example: -->
-          <input type="text" id="tenderName" placeholder="Tender Name" /><br />
-          <input type="text" id="tenderID" placeholder="Tender ID" /><br />
-          <input
-            type="text"
-            id="tenderPrice"
-            placeholder="Tender Price"
-          /><br />
-          <textarea id="tenderDesc" placeholder="Description"></textarea><br />
+          <div class="form-group">
+            <input type="text" class="form-control" id="tenderName" placeholder="Tender Name" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="tenderID" placeholder="Tender ID" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="tenderPrice" placeholder="Tender Price" />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="tenderDesc" placeholder="Description"></textarea>
+          </div>
           <!-- Added textarea for description -->
-          <button type="button" onclick="submitTender()">Submit</button>
+          <button type="button" onclick="submitTender()" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
 
 {% endblock %} {% block script %}
 <script>
