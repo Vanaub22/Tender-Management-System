@@ -93,18 +93,10 @@ class Bid(db.Model):
         else:
             return False  # User doesn't have enough budget
     
-    # def place_bid(cls, user, tender, amount):
-    #     if tender.is_tender_open():
-    #         if user.can_set_bid(tender):
-    #             bid = cls(amount=amount, bidder_id=user.id, tender_id=tender.id)
-    #             db.session.add(bid)
-    #             db.session.commit()
-    #             return True
-    #         else:
-    #             return False  # User doesn't have enough budget
-    #     else:
-    #         return False  # Tender is closed
-    
     def is_tender_open(self):
         return datetime.datetime.utcnow() < self.closing_date
     
+class Admin(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    admin_key =db.Column(db.String(150), unique=True)
+    password = db.Column(db.String(150))

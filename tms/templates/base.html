@@ -39,6 +39,9 @@
             <a class="nav-link" href="{{ url_for('market_page') }}">Market</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="admin/admin-login">Admin Portal</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ url_for('contact_page') }}">Contact Admin</a>
           </li>
           {%block navlink%}{%endblock%}
@@ -85,7 +88,8 @@
       </button>
       {{ message }}
     </div>
-    {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
+    {% endfor %} {% endif %} {% endwith %}
+    {% block content %} {% endblock %}
     <!-- Future Content here -->
 
     <!-- Optional JavaScript -->

@@ -161,7 +161,12 @@ def add_item():
     price = request.json['price']
     tid = request.json['tid']
     desc = request.json['desc']
-    new_item = Item(name=name, price=price, tid=tid, desc=desc)
+    closing_date_str = request.json['closing_date']
+
+    # Convert the closing_date string to a datetime object
+    closing_date = datetime.strptime(closing_date_str, '%Y-%m-%d')
+
+    new_item = Item(name=name, price=price, tid=tid, desc=desc, closing_date=closing_date, owner=current_user.id)
     db.session.add(new_item)
     db.session.commit()
     return item_schema.jsonify(new_item)

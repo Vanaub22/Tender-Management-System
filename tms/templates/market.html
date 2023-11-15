@@ -119,6 +119,9 @@ navlink%}
             <input type="text" class="form-control" id="tenderPrice" placeholder="Tender Price" />
           </div>
           <div class="form-group">
+            <input type="date" class="form-control" id="closing_date">
+          </div>
+          <div class="form-group">
             <textarea class="form-control" id="tenderDesc" placeholder="Description"></textarea>
           </div>
           <!-- Added textarea for description -->
@@ -138,6 +141,7 @@ navlink%}
     var tenderPrice = document.getElementById("tenderPrice").value;
     var tenderID = document.getElementById("tenderID").value;
     var tenderDesc = document.getElementById("tenderDesc").value;
+    var closingDate = document.getElementById("closing_date").value;
 
     // Create the data object to be sent to the Flask endpoint
     var data = {
@@ -145,6 +149,7 @@ navlink%}
       price: tenderPrice,
       tid: tenderID,
       desc: tenderDesc,
+      closing_date: closingDate
     };
 
     // Send the data to the Flask endpoint
