@@ -117,12 +117,12 @@ def contact_page():
     form = ContactForm()
 
     if form.validate_on_submit():
+        user_email = current_user.email_address
         user_query = form.user_query.data
         tender_id = form.tender_id.data
 
-        subject = f"Permission to perform edit operation on tender_id {tender_id}"
-        body = f"User query: {user_query}\n\nTender ID: {tender_id}"
-
+        subject = f"Requesting Super-Admin privileges for Tender {tender_id} under ProTender Listing."
+        body = f"User query: {user_query}\n\nTender ID: {tender_id}\nThis is an auto-generated mail. Please revert back to the request at {user_email}.\nProTender TMS."
         msg = Message(subject=subject, sender='webapptesting000@gmail.com', recipients=['anucbs2018@gmail.com'], body=body)
         mail.send(msg)
 
