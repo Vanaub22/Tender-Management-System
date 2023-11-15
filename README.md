@@ -12,6 +12,7 @@ This is the Beta Version of the Tender Management System which I had to prepare 
  5. **Delete Tenders from Listing**
  6. **Adding Tenders to Listing**
  7. **Admin Panel with full access to User, Bidding and Tender Databases**
+ 8. **Contact Admin Section with Automated E-mail Facility**
 
 ## Tech used:
 
