@@ -11,6 +11,7 @@ This is the Beta Version of the Tender Management System which I had to prepare 
  4. **Displaying Available Balance after Selling / Purchasing**
  5. **Delete Tenders from Listing**
  6. **Adding Tenders to Listing**
+ 7. **Admin Panel with full access to User, Bidding and Tender Databases**
 
 ## Tech used:
 

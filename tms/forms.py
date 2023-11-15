@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,PasswordField,SubmitField
-from wtforms.validators import Length,EqualTo,Email,DataRequired,ValidationError
+from wtforms import StringField,PasswordField,SubmitField,IntegerField,TextAreaField
+from wtforms.validators import Length,EqualTo,Email,DataRequired,ValidationError,NumberRange
 from tms.models import User
 class RegisterForm(FlaskForm):
 
@@ -25,7 +25,13 @@ class LoginForm(FlaskForm):
     submit = SubmitField(label='Sign in')
 
 class SetBidForm(FlaskForm):
+    bid_amount = IntegerField(label="Enter Bidding Amount:", validators=[DataRequired(), NumberRange(min=0)])
     submit = SubmitField(label='Set Bid for Tender')
+
+class ContactForm(FlaskForm):
+    user_query = TextAreaField('Your Query', validators=[DataRequired()])
+    tender_id = StringField('Tender ID in Discussion')
+    submit = SubmitField('Submit')
 
 class SellTenderForm(FlaskForm):
     submit = SubmitField(label='Sell Tender')

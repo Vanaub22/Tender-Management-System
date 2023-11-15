@@ -24,7 +24,7 @@ navlink%}
           <th scope="col">ID</th>
           <th scope="col">Name</th>
           <th scope="col">Tender ID</th>
-          <th scope="col">Price</th>
+          <th scope="col">Current Valuation</th>
           <th scope="col">Options</th>
         </tr>
       </thead>
@@ -69,7 +69,7 @@ navlink%}
     <p>Click on Let Go to stop placing bids for a Tender</p>
     <br />
     <div class="row">
-      {% for owned_item in owned_items %} {% include
+      {% for owned_item in current_user.owned_items %} {% include
       'components/owned_items_modals.html' %}
       <div class="col-md-6">
         <div style="margin-bottom: 5px" class="card text-center bg-dark">

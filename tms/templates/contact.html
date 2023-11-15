@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact Page
+{% endblock %}
+
+{% block content %}
+<body>
+
+    <div class="container mt-5">
+        <h1>Contact Admins</h1>
+        <p>This is the portal for all bidders and sellers to contact the Super Admins should the need arise. Any tender info which needs to updated and/or any discrepancy in the bidding system if detected will need to be specified here along with the correct Tender ID(s). The query will be directly mailed to the Super Admin(s), who will get in touch with you ASAP.</p>
+
+        <form method="POST" action="{{ url_for('contact_page') }}" class="mt-3">
+            <!-- Flask-WTF CSRF token -->
+            {{ form.hidden_tag() }}
+
+            <!-- User's Query -->
+            <div class="form-group">
+                <label for="user_query">Your Query:</label>
+                <textarea class="form-control" id="user_query" name="user_query" rows="4" required></textarea>
+            </div>
+
+            <!-- Tender ID in Discussion -->
+            <div class="form-group">
+                <label for="tender_id">Tender ID in Discussion (if applicable):</label>
+                <input type="text" class="form-control" id="tender_id" name="tender_id">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+{% endblock %}

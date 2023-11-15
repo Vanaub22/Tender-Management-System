@@ -2,9 +2,11 @@ TOPIC: ONLINE TENDER MANAGEMENT SYSTEM
 
 LINK TO THE PROJECT ON GITHUB: https://github.com/Vanaub22/Tender-Management-System
 
-DEPLOYMENT LINK: N/A
+Tech Used:
+1. Front-End: HTML, CSS, JavaScript, Bootstrap
+2. Back-end: Flask, Python, SQLAlchemy, SQLite3
 
 Name: Anuvab Chakravarty
 Roll: 13000121036
-Department: Computer Science Engineering
+Department: Computer Science Engineering (CSE)
 Year: 3rd (2021-25)
