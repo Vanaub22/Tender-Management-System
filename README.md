@@ -25,8 +25,6 @@ The project is still in its nascent stage and runs only on a Virtual Environment
 
  1. Install VS Code (Assuming you have python, Flask and pip installed)
  2. Open Terminal in VS Code and type: `protender\Scripts\activate.bat` to launch the Virtual Environment.
- 3. In your terminal, type in: `python -m pip install flask_bcrypt`
- 4. In your terminal, type in: `python -m pip install flask_wtf`
- 5. In your terminal, type in: `python -m pip install flask_login`
- 6. After that simply type in `python
+ 3. In your terminal, type in: `python -m pip install flask_bcrypt flask_login flask_wtf`
+ 4. After that simply type in `python
     run.py` in the terminal, this should get your web application up and running at `http://127.0.0.1:5000/home`.
