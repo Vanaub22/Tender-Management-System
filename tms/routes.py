@@ -78,7 +78,7 @@ def market_page():
                         db.session.commit()
                         flash(f"Congratulations!! You have successfully set your bid for the {bid_obj.name} tender at ₹{amount}", category='success')
                 else:
-                    flash("Unfortunately, the bid cannot be made due to Insufficient Balance or the tender is closed", category='danger')
+                    flash("Unfortunately, the bid cannot be made due to Insufficient Balance.", category='danger')
             else:
                 flash("Unfortunately, the tender is closed and no more bids can be placed.", category='danger')
         # Selling Tender Logic
@@ -184,3 +184,15 @@ def delete_item(item_id):
     db.session.delete(item)
     db.session.commit()
     return jsonify({'message': 'Tender deleted successfully'})
+
+# Route to handle setting user's budget
+@app.route('/set_budget', methods=['POST'])
+@login_required
+def set_budget():
+    new_budget = request.json['new_budget']
+
+    # Update the user's budget
+    current_user.budget = new_budget
+    db.session.commit()
+
+    return jsonify({'message': 'Budget updated successfully'})

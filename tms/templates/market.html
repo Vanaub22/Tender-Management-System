@@ -9,7 +9,18 @@ navlink%}
     >Create Tender</a
   >
 </li>
-{%endblock%} {% block content %}
+{%endblock%} 
+{%block leftnavlink%}
+<li class="nav-item">
+  <a class="nav-link" href="#"
+  data-toggle="modal"
+  data-target="#Modal-SetBudget"
+  style="color: lawngreen; font-weight: bold">
+    <i class="fas fa-coins"></i>₹{{ current_user.budget }}
+  </a>
+</li>
+{%endblock%}
+{% block content %}
 <div class="row" style="margin-top: 20px; margin-left: 20px">
   <div class="col-8">
     <h2>Available Tenders on ProTender</h2>
@@ -105,6 +116,7 @@ navlink%}
         </button>
       </div>
       <div class="modal-body">
+        <p>To add private ownership privileges to tenders created in the marketplace, the individual/organization is requested to contact the Admin.</p>
         <!-- Your form for creating a new tender -->
         <form id="createTenderForm">
           <!-- Input fields for creating a new tender -->
@@ -118,14 +130,43 @@ navlink%}
           <div class="form-group">
             <input type="text" class="form-control" id="tenderPrice" placeholder="Tender Price" />
           </div>
+          <!-- <div class="form-group">
+            <input type="date" class="form-control" id="closing_date" placeholder="Closing Date"> 
+          </div> -->
           <div class="form-group">
-            <input type="date" class="form-control" id="closing_date">
-          </div>
+            <!-- <label for="closing_date">Closing Date</label> -->
+            <input type="date" class="form-control" id="closing_date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Closing Date">
+        </div>
           <div class="form-group">
             <textarea class="form-control" id="tenderDesc" placeholder="Description"></textarea>
           </div>
           <!-- Added textarea for description -->
           <button type="button" onclick="submitTender()" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for setting user's budget -->
+<div class="modal fade" id="Modal-SetBudget" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Set Your Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>It is highly recommended to set a fixed budget before beginning bidding to have a clear idea of when to bid and when to let go.</p>
+        <!-- Your form for setting user's budget -->
+        <form id="setBudgetForm">
+          <!-- Input field for setting the budget -->
+          <div class="form-group">
+            <input type="number" class="form-control" id="newBudget" placeholder="Enter Your New Budget" />
+          </div>
+          <button type="button" onclick="submitSetBudget()" class="btn btn-primary">Set Budget</button>
         </form>
       </div>
     </div>
